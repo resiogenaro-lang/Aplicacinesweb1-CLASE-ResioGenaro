@@ -1,0 +1,23 @@
+/*
+  sintaxis
+ */
+ /* regla de estilo (rule) */
+
+
+ /*selector {
+    propiedad1: valor ;
+    propiedad2 : valor;
+ }*/
+
+ /* selectores de tipo*/
+  
+ body{
+    background-color: rgb(143, 138, 90); /* #000000  #ffffff*/
+ }
+
+ header{
+    background-color: rgba(2, 241, 241, 0);
+ }
+  
+ 
+  
