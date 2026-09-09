@@ -1,0 +1,65 @@
+/*
+  sintaxis
+ */
+ /* regla de estilo (rule) */
+
+
+ /*selector {
+    propiedad1: valor ;
+    propiedad2 : valor;
+ }*/
+
+ /* selectores de tipo*/
+ html{
+   font-family: Poppins,Verdana,Geneva,'Times New Roman', Times, serif;
+ }
+  /*selector universal*/
+  @font-face
+  {
+      font-family: poppins;
+      src:url(./fuentes/Poppins-Regular.ttf)
+  }
+ body{
+    background-color: rgb(238, 0, 186); /* #000000  #ffffff*/
+ }
+ .encabezado-principal{
+     background-color: #000000;
+ }
+
+ /*header{
+    background-color: rgba(2, 241, 241, 0); 
+ }*/
+ header{
+    background-color: rgba(2, 241, 241, 0); 
+ }
+ footer{
+   background-color: #ff0000;
+ }
+ a{
+   color: #333333 ;
+   text-decoration: none;
+ }
+  
+ /* selector de clases */ 
+ /*.vinculos{
+   color: #ffffff;
+ }*/
+ .vinculos {
+    color: #ffffff;
+ }
+ .encabezado-principal .vinculos a{
+     background-color: #ffffff;}
+ .contenido-principal {
+    
+ }
+ .pie-principal{
+
+ }
+ /* ATRIBUTOS*/
+ /*[href]{
+
+ }*/
+ /*#contactos{
+
+ }*/
+  
