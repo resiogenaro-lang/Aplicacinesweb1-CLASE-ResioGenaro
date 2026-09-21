@@ -1,0 +1,138 @@
+/*
+  sintaxis
+ */
+/* regla de estilo (rule) */
+
+
+/*selector {
+    propiedad1: valor ;
+    propiedad2 : valor;
+ }*/
+
+/* selectores de tipo*/
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-family: Poppins, Verdana, Geneva, 'Times New Roman', Times, serif;
+   font-size: 14px;/*valor que afecta a todos los textos que se toma como referencia tambien*/ 
+   
+}
+
+/*selector universal*/
+@font-face {
+   font-family: poppins;
+   src: url(./fuentes/Poppins-Regular.ttf)
+}
+
+html,
+body {
+
+   padding: 0;
+   margin: 0;
+
+}
+
+.encabezado-principal {
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+   background-color: #790606;
+   padding: 5px;
+}
+
+
+
+.encabezado-principal a img {
+   width: 50px;
+}
+
+/*header{
+    background-color: rgba(2, 241, 241, 0); 
+ }*/
+header {
+   background-color: rgba(2, 241, 241, 0);
+}
+
+footer {
+   background-color: #ff0000;
+}
+
+a {
+   color: #333333;
+   text-decoration: none;
+}
+
+/* selector de clases */
+/*.vinculos{
+   color: #ffffff;
+ }*/
+.vinculos {
+   color: #ffffff;
+}
+
+.encabezado-principal .vinculos a {
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+   background-color: #ffffff;
+   padding: 5px;
+}
+
+.contenido-principal {
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+   background-color: #ffffff;
+   padding: 5px;
+
+}
+.contenido-principal .parrafo{
+   font-size: 0.9rem;  /*rem relativo de la raiz html */
+   background-color: gold;
+   position: absolute;
+   top: 100px;
+   right: 100px;
+}
+
+.contenido-principal {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: center;
+   background-color: #ffffff;
+   padding: 5px;
+}
+
+.contenido-principal.conedor-form form {
+   display: flex;
+   flex-direction: column;
+}
+
+.contenido-principal.contenedor-form form {
+   padding: 20px 20%;
+
+}
+
+.pie-principal {
+   background-color: #ff0000;
+
+
+
+}
+.pie-principal .mensajeria{
+   position: fixed; /*toma como referencia vi*/ 
+
+}
+
+/* ATRIBUTOS*/
+/*[href]{
+
+ }*/
+/*#contactos{
+
+ }*/
