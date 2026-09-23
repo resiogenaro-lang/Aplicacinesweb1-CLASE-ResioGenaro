@@ -1,138 +1,126 @@
 /*
-  sintaxis
- */
-/* regla de estilo (rule) */
+Sintaxis
+*/
+/* Regla de estilo (Rule) */
+/*
+selector {
+    propiedad1: valor;
+    propiedad2: valor;
+}
+    */
 
-
-/*selector {
-    propiedad1: valor ;
-    propiedad2 : valor;
- }*/
-
-/* selectores de tipo*/
 * {
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html {
-   font-family: Poppins, Verdana, Geneva, 'Times New Roman', Times, serif;
-   font-size: 14px;/*valor que afecta a todos los textos que se toma como referencia tambien*/ 
-   
-}
+/* IMPORTAR FUENTE */
 
-/*selector universal*/
 @font-face {
-   font-family: poppins;
-   src: url(./fuentes/Poppins-Regular.ttf)
+    font-family: Poppins;
+    src: url(./fuentes/Poppins-Regular.ttf);
 }
+
+/* SELECTOR UNIVERSAL */
 
 html,
 body {
-
-   padding: 0;
-   margin: 0;
-
+    margin: 0;
+    padding: 0;
 }
 
-.encabezado-principal {
-   display: flex;
-   flex-direction: row;
-   justify-content: end;
-   align-items: center;
-   background-color: #790606;
-   padding: 5px;
+/* Selectores de TIPO */
+
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; /* valor que afecta a todos los textos, y se toma como referencia */
+}
+
+body {
+    background-color: #aaa;
+    /* #000000 #ffffff */
 }
 
 
-
-.encabezado-principal a img {
-   width: 50px;
-}
-
-/*header{
-    background-color: rgba(2, 241, 241, 0); 
- }*/
 header {
-   background-color: rgba(2, 241, 241, 0);
+    background-color: #ffff00;
 }
 
-footer {
-   background-color: #ff0000;
-}
+/* header {
+    background-color: #ff0000;
+} */
 
 a {
-   color: #333333;
-   text-decoration: none;
+    color: #333333;
+    text-decoration: none;
 }
 
-/* selector de clases */
-/*.vinculos{
-   color: #ffffff;
- }*/
-.vinculos {
-   color: #ffffff;
+
+/* Selectores de CLASE */
+/* .vinculos{
+    color: #ffffff;
+} */
+
+
+/* ENCABEZADO */
+
+.encabezado-principal {
+    position: sticky;
+    top:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cccccc;
+    padding: 5px;
+}
+
+.encabezado-principal a img {
+    width: 50px;
 }
 
 .encabezado-principal .vinculos a {
-   display: flex;
-   flex-direction: row;
-   justify-content: end;
-   align-items: center;
-   background-color: #ffffff;
-   padding: 5px;
+    color: #333;
 }
 
+/* CONTENIDO PRINCIPAL */
 .contenido-principal {
-   display: flex;
-   flex-direction: row;
-   justify-content: end;
-   align-items: center;
-   background-color: #ffffff;
-   padding: 5px;
-
+    background-color: #fff;
+    /*position: relative;*/
+    height: 1500px;
 }
 .contenido-principal .parrafo{
-   font-size: 0.9rem;  /*rem relativo de la raiz html */
-   background-color: gold;
-   position: absolute;
-   top: 100px;
-   right: 100px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 0.9rem;/* rem relativo a la raiz html */
+    background-color: #ffff00;
+    width: 200px;
+}
+.contenido-principal .contenedor-form{
+    padding: 20px 20%;
+}
+.contenido-principal .contenedor-form form {
+    display: flex;
+    flex-direction: column;
 }
 
-.contenido-principal {
-   display: flex;
-   flex-direction: column;
-   justify-content: end;
-   align-items: center;
-   background-color: #ffffff;
-   padding: 5px;
-}
-
-.contenido-principal.conedor-form form {
-   display: flex;
-   flex-direction: column;
-}
-
-.contenido-principal.contenedor-form form {
-   padding: 20px 20%;
-
-}
-
+/* PIE PRINCIPAL */
 .pie-principal {
-   background-color: #ff0000;
-
-
-
-}
-.pie-principal .mensajeria{
-   position: fixed; /*toma como referencia vi*/ 
-
+    background-color: #cccccc;
 }
 
-/* ATRIBUTOS*/
-/*[href]{
+.pie-principal li.mensajeria{
+    list-style: none;
+    position: fixed; /* toma como referencia al viewport */
+    bottom: 20px;
+    right: 20px;
+}
 
- }*/
-/*#contactos{
+/* ATRIBUTO */
+/* [href]{
 
- }*/
+} */
+
+/* #contactos{
+
+} */

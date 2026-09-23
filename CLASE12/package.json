@@ -1,9 +1,10 @@
 {
-  "name": "CLASE9",
+  "name": "clase9",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"dev" :"five-server"
+  "scripts": {
+    "dev": "five-server"
   },
   "keywords": [],
   "author": "",
